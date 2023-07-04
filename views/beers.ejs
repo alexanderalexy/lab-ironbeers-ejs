@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Express IronBeers</title>
+    <link rel="stylesheet" href="/public/stylesheets/styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Beers</h1>
+        <div class="row">
+            <% beers.forEach((beer) => { %>
+                <img class="beer-img" src="<%= beer.image_url %>" alt="<%= beer.name %> <%= beer.lastName %>"/>
+                <h3 class="beer-name"><%= beer.name %></h3>
+                <h4 class="beer-description"><%= beer.description%></h4>
+                <p class="beer-tagname"><%= beer.tagline %></p>
+                
+            <% }) %>
+        </div>
+      </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+    

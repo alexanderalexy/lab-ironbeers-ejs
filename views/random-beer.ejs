@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Express IronBeers</title>
+    <link rel="stylesheet" href="/public/stylesheets/styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Beers</h1>
+        <div>
+            <h2><%= beer.name %></h2>
+            <img src="<%= beer.image_url %>" alt="Beer Image" />
+            <p>Description: <%= beer.description %></p>
+            <p>Tagline: <%= beer.tagline %></p>
+            <p>Food Pairing: <%= beer.food_pairing.join(', ') %></p>
+            <p>Brewer Tips: <%= beer.brewers_tips %></p>
+          </div>
+  </body>
+</html>
